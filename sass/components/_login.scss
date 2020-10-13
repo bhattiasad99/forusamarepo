@@ -1,0 +1,95 @@
+.loginBox {
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    display: inline-block;
+    color: black;
+    overflow: hidden;
+    z-index: 0;
+    max-width: 80vh;
+    transform: translateX(-50%);
+    height: 40vh;
+    background-image: linear-gradient(105deg, rgba($color-white, $opacity-general) 0%, rgba($color-white,$opacity-general) 80%, rgba($color-secondary, $opacity-general) 80%);
+    animation: moveDown 0.36s ease-in 0.84s;
+    overflow: hidden;
+    animation-fill-mode: backwards;
+    height: 36rem;
+
+    &__bottom{
+        margin-top: 5rem;
+        float: left;
+        margin-left: 11.5rem;
+
+        &--link {
+            &:link, &:visited {
+                font-family: $defaultFont;
+                text-decoration: none;
+                font-weight: 800;
+                letter-spacing: 1px;
+                padding: 2px 3px;
+            }
+
+            &:hover {
+                background-color: purple;
+                border-radius: 2px;
+                color: $color-white;
+                transition: all 0.3s;
+                padding: 2px 3px;
+            }
+        }
+    }
+    }
+
+.form {
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__input {
+        margin-left: 4rem;
+        font-size: 1.3rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white,.5);
+        border: none;
+        transition: all 0.2s;
+        width: 70%;
+        display: block;
+
+        &::-webkit-input-placeholder {
+            color: $color-greyDark;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            border-bottom: 3px solid $color-secondary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-primaryDark;
+        }
+    }
+
+    &__label {
+        float: right;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-right: 14rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all 0.3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+
+}

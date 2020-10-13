@@ -1,0 +1,41 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Light.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: vehicle;
+    src: url(fonts/DESIGNER.otf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Sundylle;
+    src: url(fonts/Sundylle.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: comforta;
+    src: url(fonts/Comfortaa-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.headingSecondary {
+    display: inline-block;
+    font-family: Sundylle;
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: left;
+    padding: 1rem 5rem;
+    background-image: linear-gradient(to right, $color-secondary, $color-secondary);
+    color: transparent;
+    letter-spacing: 0.2rem;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}

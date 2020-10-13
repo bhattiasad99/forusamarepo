@@ -1,0 +1,29 @@
+.button {
+    color: $color-white;
+    position: relative;
+    float: left;
+    margin-left: 18rem;
+    margin-top: 4rem;
+    background-color: $color-secondary;
+    padding: 0.8rem 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: transparent;
+    outline: none;
+    
+    font-weight: 800;
+    &:hover {
+        background-color: $color-secondary2;
+        transition: all 0.5s;
+    }
+
+    &:active {
+        outline: none;
+        color: $color-primaryDark;
+        transition: all 0.2s;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

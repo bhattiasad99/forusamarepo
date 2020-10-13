@@ -1,0 +1,19 @@
+.headerPrimary {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    font-family: vehicle;
+    font-size: 7rem;
+    color: $purplishGrey;
+    transform: translateX(-50%);
+    text-align: center;
+    //color: #64567d;
+    color: white;
+    text-transform:s uppercase;
+    animation: moveInUp 1.2s;
+    background-color: $color-secondary;
+    padding: 3rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    opacity: $opacity-general;
+}
